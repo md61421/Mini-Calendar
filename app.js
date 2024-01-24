@@ -27,9 +27,8 @@ const allMonths = [
 ];
 
 let today = new Date();
-console.log(today);
 
 date.innerHTML = (today.getDate() < 10 ? "0" : "") + today.getDate();
 day.innerHTML = weekdays[today.getDay()];
-month.innerHTML = allMonths[today.getDay()];
+month.innerHTML = allMonths[today.getMonth()];
 year.innerHTML = today.getFullYear();
